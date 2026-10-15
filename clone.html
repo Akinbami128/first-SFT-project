@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i-fitness</title>
+    <style>
+        *{
+            padding: 0px 0px;
+            margin: 0px 0px;
+        }
+        .main_container{
+            background-color: aqua;
+            width: 100%;
+            height: 100vh;
+            background-image: url(/asset/bg.jpg);
+            background-position:center;
+            background-size: cover;
+            padding-top: 10px;
+        }
+        .header_container{
+            background-color: rgba(128, 128, 128, 0.507);
+            width: 100%;
+            height: 12vh;
+            border-radius: 25px;
+            padding: 0px 5px ;
+            
+        }
+        .header_inner_container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 40px;
+            padding-top: 12px;
+        }
+        .header_button{
+            width: 100px;
+            height: 40px;
+            margin: 0px 10px;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+        }
+        .header_button:hover{
+            color: white;
+            background-color: black;
+            transition: background-color 2s ease;
+        }
+        .content_button{
+            width: 200px;
+            font-size: 15px;
+            background-color: rgb(185, 12, 12);
+            border: none;
+            border-radius: 25px;
+            margin-top: 10px;
+            padding: 10px 12px;
+        }
+        .content_button:hover{
+            color: white;
+            background-color: black;
+            transition: background-color 2s ease ;
+            cursor: pointer;
+        }
+        .content_container{
+            width: "100%";
+            height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .content_innercontainer{
+            width: 700px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color:rgba(255, 255, 255, 0.37);
+            border-radius: 15px;
+        }
+        .content_title{
+            width: 500px;
+            font-size: 50px;
+            font-weight: 500;
+            
+
+        }
+        .content_title span{
+            color: rgb(185, 12, 12)
+        }
+        .header_logo{
+            width: 100px;
+            height: 65px;
+            /* background-color: blue; */
+        }
+        .logo{
+            width: 100px;
+            height: 60px;
+            object-fit: calc(98px 58px);
+            padding: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_container">
+        <!-- header -->
+         <!-- logo and naigation -->
+        <div class="header_container">
+            <div class="header_inner_container">
+                <div class="header_logo">
+                    <img src="./asset/logo1.png" class="logo"> 
+                </div>
+                
+        
+            <div>
+                <button class="header_button">Home</button>
+                <button class="header_button">Contact us</button>
+                <button class="header_button">Locations</button>
+                <button class="header_button">About us</button>
+            </div>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="content_container" >
+            <div class="content_innercontainer">
+                <h1 class="content_title">I-FITNESS <span> <br>GYM </br></span></h1>
+                <div>
+                    <button class="content_button">click here</button>
+                </div>
+            </div>
+        </div> 
+    
+        <!-- footer -->
+        <div>
+            <h3 style="color: white;">copyright Emmanuel 2024</h3>
+        </div>
+    </div>
+</body>
+</html>
